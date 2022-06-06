@@ -1,0 +1,53 @@
+.introSection {
+  background: $ghost_white;
+
+  &__wrapper {
+    padding: 25px 0;
+    display: flex;
+  }
+
+  &__textBlock {
+    padding-right: 20px;
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__photoBlock {
+    flex: 1 0 50%;
+  }
+
+  &__photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    color: $green;
+  }
+
+  &__subTitle {
+    color: $green;
+    margin: 35px 0 15px;
+  }
+
+  &__button {
+    margin-top: 35px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: $tabletWidth) {
+  .introSection {
+      &__wrapper {
+        flex-direction: column;
+      }
+
+      &__textBlock {
+          margin-bottom: 25px;
+          padding: 0;
+      }
+  }
+}

@@ -1,0 +1,28 @@
+@import 'base/_variables';
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 65px;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: $tabletWidth) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: $mobileWidth) {
+  .container {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,111 @@
+@import 'base/_variables';
+
+.header {
+  &__wrapper {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__leftSide {
+    display: flex;
+  }
+
+  &__menu {
+    margin-left: 65px;
+  }
+
+  &__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__list-item {
+    padding: 0 15px;
+    border-right: 2px solid $black;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $green;
+    }
+  }
+
+  &__select {
+    border: none;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    height: 50px;
+    width: 425px;
+    border: 2px solid $green;
+    padding: 10px 15px;
+
+    &::placeholder {
+      color: $light_green;
+      font-family: 'Outfit-Regular';
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+    }
+
+    &:focus {
+      outline: 1px solid $light_green;
+    }
+  }
+
+  &__button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: $green;
+    transition: all 0.3s;
+
+    &:hover {
+      background: $light_green;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .header {
+    &__menu {
+      margin-left: 20px;
+    }
+
+    &__input {
+      width: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: $tabletWidth) {
+  .header {
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobileWidth) {
+  .header {
+    &__input {
+      width: 200px;
+    }
+  }
+}
