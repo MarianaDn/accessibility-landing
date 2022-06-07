@@ -70,7 +70,7 @@
 
   &__line {
     border: none;
-    border-top: 1px solid $silver;
+    border-top: 1px solid $grey_light;
   }
 
   &__terms {
@@ -86,7 +86,7 @@
   }
 
   &__termLink {
-    color: $silver_light;
+    color: $silver;
     transition: all 0.3s;
 
     &:hover {
