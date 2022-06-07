@@ -584,7 +584,7 @@ a {
 }
 .footer__line {
   border: none;
-  border-top: 1px solid #E9E9E9;
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
 }
 .footer__terms {
   margin-left: auto;
